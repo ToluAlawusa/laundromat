@@ -31,4 +31,9 @@ Route::group(['middleware' => ['web']], function (){
         'as' => 'adminlogin'
     ]);
     
+    Route::get('/dashboard', [
+        'uses' => 'Dashboard@showDashboard',
+        'as' => 'dashboard'
+    ]);
+    
 });    

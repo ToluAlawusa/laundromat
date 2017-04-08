@@ -37,6 +37,6 @@ class AdminLogin extends Controller
 
             
 
-            return redirect()->route('addcategory');
+            return redirect()->route('dashboard');
     }
 }
