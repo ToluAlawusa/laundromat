@@ -36,4 +36,14 @@ Route::group(['middleware' => ['web']], function (){
         'as' => 'dashboard'
     ]);
     
+    Route::get('/createadmin', [
+        'uses' => 'CreateAdmin@showCreateAdmin',
+        'as' => 'createadmin'
+    ]);
+    
+    Route::post('/createadmin', [
+        'uses' => 'CreateAdmin@doCreateAdmin',
+        'as' => 'createadmin'
+    ]);
+    
 });    
